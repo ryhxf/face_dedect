@@ -1,1 +1,1 @@
-# face_dedect.py
+详情见B站视频
