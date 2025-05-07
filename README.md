@@ -2,7 +2,7 @@
 
 接下来是针对环境安装的补充教程，可能新手会走很多坑。
 
-如果你的本地没有C++编译环境，则需要安装`Visual Studio`，或者可以只安装`Visual Studio Build Tools`，为了简便，我给了`Visual Studio Build Tools`的网址。
+如果你的本地没有C++编译环境，则需要安装`Visual Studio`，或者可以只安装`Visual Studio Build Tools`，为了简便， 我给了`Visual Studio Build Tools`的网址。
 `https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/`
 点击下载生成工具即可
 打开下载的.exe文件进行安装，安装选项中只需选择"C++ 生成工具"选项即可，至于安装路径按需选择。
