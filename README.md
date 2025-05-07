@@ -11,10 +11,11 @@
 
 Cmake安装
 进入该网址下载安装包，正常安装即可
-[GitHub Pages]）(https://github.com/Kitware/CMake/releases/download/v4.0.2/cmake-4.0.2-windows-x86_64.msi)
-
-python虚拟环境怎么建，可以用我视频中给的Conda，但是Conda对于很多人来说
 (https://github.com/Kitware/CMake/releases/download/v4.0.2/cmake-4.0.2-windows-x86_64.msi)
-```
-mkdir build
-```
+
+python虚拟环境怎么建，可以用我视频中给的Conda，但是Conda对于很多人来说,可能安装比较困难，这里我用python虚拟环境来替代
+在确保本地有python的情况下，在命令行窗口中
+# 创建虚拟环境（此处路径换成你设置的虚拟环境路径，这里以某个face_detect文件夹举例）
+python -m venv C:\Users\yyx\Desktop\face_detect
+# 进入该环境（打开该环境的activate文件）
+C:\Users\yyx\Desktop\face_detect\Scripts\activate
