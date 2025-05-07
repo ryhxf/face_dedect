@@ -18,4 +18,6 @@ python虚拟环境怎么建，可以用我视频中给的Conda，但是Conda对�
 ## 创建虚拟环境（此处路径换成你设置的虚拟环境路径，这里以某个face_detect文件夹举例）
 python -m venv C:\Users\yyx\Desktop\face_detect
 # 进入该环境（打开该环境的activate文件）
-###C:\Users\yyx\Desktop\face_detect\Scripts\activate
+### 进入该环
+#### 进入该环
+C:\Users\yyx\Desktop\face_detect\Scripts\activate
