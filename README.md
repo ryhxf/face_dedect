@@ -26,7 +26,7 @@ python -m venv C:\Users\yyx\Desktop\face_detect
 C:\Users\yyx\Desktop\face_detect\Scripts\activate
 ```
 
-## Dlib库安装方法（注意，建议在python虚拟环境下进行，本地python环境不建议，容易乱）
+## Dlib库安装方法（注意，建议在python虚拟环境下进行，本地python环境不建议，环境容易乱）
 把dlib库下载下来
 ```
 git clone https://github.com/davisking/dlib.git
@@ -43,4 +43,10 @@ mkdir build
 ```
 cd build
 ```
-### 接下来是编译安装，要保证电脑上有cmake，如果没有，自行安装
+### 接下来是编译安装，要保证电脑上有cmake和其他上述环境，如果没有，自行安装
+如果是计算机
+```
+cmake .. -DDLIB_USE_CUDA=1 -DUSE_AVX_INSTRUCTIONS=1
+```
+
+如果是Linux开发板（以RDK X5为例，因为嵌入式开发板通常自带C++等编译环境，所以嵌入式版本不需要上面复杂的环境安装操作）
