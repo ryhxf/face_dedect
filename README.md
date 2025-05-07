@@ -26,7 +26,7 @@ python -m venv C:\Users\yyx\Desktop\face_detect
 C:\Users\yyx\Desktop\face_detect\Scripts\activate
 ```
 
-## Dlib库安装方法（注意，建议在python虚拟环境下进行，本地python环境不建议，环境容易乱）
+## Dlib库安装方法（注意，计算机建议在python虚拟环境下进行，本地python环境不建议，环境容易乱。嵌入式开发板可以无所谓，直接本地运行即可）
 把dlib库下载下来
 ```
 git clone https://github.com/davisking/dlib.git
@@ -53,6 +53,8 @@ cmake .. -DDLIB_USE_CUDA=1 -DUSE_AVX_INSTRUCTIONS=1
 ```
 cmake ..
 ```
+
+
 
 使用Cmake编译
 ```
@@ -82,11 +84,13 @@ python setup.py install --set USE_AVX_INSTRUCTIONS=yes --set DLIB_USE_CUDA=yes
 sudo python setup.py install
 ```
 
+
 ### 还需要安装的python库
-可以用清华源，加**-i https://pypi.tuna.tsinghua.edu.cn/simple**
+可以用清华源，加(-i https://pypi.tuna.tsinghua.edu.cn/simple)
 ```
 pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 ```
 pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+我想到的可能涉及的环境问题都在里面了，在跑代码的时候，别忘了替换里面的文件路径（视频教程中有讲），为了能在任意条件下都能运行此代码，我用的都是绝对路径，如果觉得麻烦，也可以自行更换成相对路径。
