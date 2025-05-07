@@ -44,9 +44,49 @@ mkdir build
 cd build
 ```
 ### 接下来是编译安装，要保证电脑上有cmake和其他上述环境，如果没有，自行安装
-如果是计算机
+#### 如果是计算机
 ```
 cmake .. -DDLIB_USE_CUDA=1 -DUSE_AVX_INSTRUCTIONS=1
 ```
+#### 如果是Linux开发板
+（以RDK X5为例，因为嵌入式开发板通常自带C++等编译环境，所以嵌入式版本不需要上面复杂的环境安装操作）
+```
+cmake ..
+```
 
-如果是Linux开发板（以RDK X5为例，因为嵌入式开发板通常自带C++等编译环境，所以嵌入式版本不需要上面复杂的环境安装操作）
+使用Cmake编译
+```
+cmake --build .
+```
+如果在过程中报错**No module named 'distutils'**，执行
+```
+pip install --upgrade setuptools
+```
+如果提示安装失败，或者没有对应版本，可能需要更新电脑的pip（某些人电脑可能pip版本过老）
+```
+python.exe -m pip install --upgrade pip
+```
+运行完再**pip install**即可
+
+跳转回上个文件夹
+```
+cd ..
+```
+
+#### 如果是计算机
+```
+python setup.py install --set USE_AVX_INSTRUCTIONS=yes --set DLIB_USE_CUDA=yes
+```
+#### 如果是Linux开发板
+```
+sudo python setup.py install
+```
+
+### 还需要安装的python库
+可以用清华源，加**-i https://pypi.tuna.tsinghua.edu.cn/simple**
+```
+pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+```
+pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
